@@ -23,10 +23,10 @@ int _strtol(char *num_string, unsigned int line_number)
 	}
 
 	if (endptr == num_string)
-			{
-				printf("L%d: usage: push integer\n", line_number);
-						exit(EXIT_FAILURE);
-						}
+	{
+		printf("L%d: usage: push integer\n", line_number);
+		exit(EXIT_FAILURE);
+	}
 	if (num_string[0] != '\0')
 		if (!isdigit(num_string[0]) && *endptr != '\0')
 		{

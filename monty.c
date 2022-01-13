@@ -50,5 +50,5 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 	process_file(argv[1], &head);
-	exit(EXIT_FAILURE);
+	exit(EXIT_SUCCESS);
 }
