@@ -51,3 +51,20 @@ void ins_pall(stack_t **stack, unsigned int line_number)
 		element = element->next;
 	}
 }
+
+/**
+ * ins_pint - Function print the value at top of stack
+ * @stack: Double Pointer
+ * @line_number: Value of new node
+ * Return: No Line
+ **/
+
+void ins_pint(stack_t **stack, unsigned int line_number)
+{
+	if (stack == NULL || *stack == NULL)
+	{
+		printf("L%u: can't pint, stack empty\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	printf("%d\n", (*stack)->n);
+}
