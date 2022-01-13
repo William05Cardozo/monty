@@ -48,7 +48,7 @@ typedef struct instruction_s
 typedef struct glob_s
 {
 		stack_t **top;
-			instruction_t **ops;
+		instruction_t **ops;
 } glob_t;
 
 extern glob_t glob;
@@ -64,6 +64,8 @@ void ins_pall(stack_t **stack, unsigned int line_number);
 void ins_swap(stack_t **stack, unsigned int line_number);
 void ins_add(stack_t **stack, unsigned int line_number);
 void ins_nop(stack_t **stack, unsigned int line_number);
-int is_leading_digit(char ascii_char);                                                                            int _strtol(char *num_string, unsigned int line_number);
+int is_leading_digit(char ascii_char);
+int _strtol(char *num_string, unsigned int line_number);
+
 
 #endif

@@ -1,6 +1,6 @@
 #include "monty.h"
 
-void instruction_push(stack_t **stack, unsigned int line_number)
+void ins_push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *element = malloc(sizeof(stack_t));
 	char *op;
