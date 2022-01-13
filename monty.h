@@ -7,6 +7,8 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <unistd.h>
+#include <errno.h>
+#include <limits.h>
 
 #define UNUSED(x) (void)(x)
 #define TRUE 1
@@ -41,10 +43,18 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
+typedef struct glob_s
+{
+		stack_t **top;
+			instruction_t **ops;
+} glob_t;
+
+extern glob_t glob;
+
+void stack_init(stack_t **head);
+void free_all(void);
 int process_file(char *filename, stack_t **stack);
-
 void delegate_op(stack_t **stack, char *op, unsigned int line_number);
-
 void ins_push(stack_t **stack, unsigned int line_number);
 void ins_pop(stack_t **stack, unsigned int line_number);
 void ins_pint(stack_t **stack, unsigned int line_number);

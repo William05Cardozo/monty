@@ -26,7 +26,7 @@ void delegate_op(stack_t **stack, char *op, unsigned int line_number)
 	}
 	if (strlen(op) != 0 && op[0] != '#')
 	{
-		print("L%u: unknown instruction %s\n", line_number, op);
+		printf("L%u: unknown instruction %s\n", line_number, op);
 		exit(EXIT_FAILURE);
 	}
 }
