@@ -9,6 +9,8 @@
 #include <unistd.h>
 #include <errno.h>
 #include <limits.h>
+#include <fcntl.h>
+#include <ctype.h>
 
 #define UNUSED(x) (void)(x)
 #define TRUE 1
