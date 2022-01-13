@@ -49,7 +49,7 @@ typedef struct instruction_s
  * struct glob_s - globally useful variables, all rolled into one
  * @top: double pointer to top of stack
  * @ops: double pointer to an instruction struct
- **/
+ * **/
 
 typedef struct glob_s
 {

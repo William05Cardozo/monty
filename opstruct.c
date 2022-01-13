@@ -18,9 +18,9 @@ void delegate_op(stack_t **stack, char *op, unsigned int line_number)
 		{"pall", ins_pall},
 		{"pint", ins_pint},
 		{"pop", ins_pop},
-	/* 	{"swap", ins_swap},*/
-	/* 	{"add", ins_add},*/
-	/*	{"nop", ins_nop},*/
+		{"swap", ins_swap},
+		{"add", ins_add},
+		{"nop", ins_nop},
 		{NULL, NULL}
 	};
 
