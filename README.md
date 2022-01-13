@@ -43,43 +43,17 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 
 ### Data structures
 
-Please use the following data structures for this project. Don’t forget to include them in your header file.
+Please use the following data structures for this project. Don’t forget to include them in your header file
 
-/**
- * struct stack_s - doubly linked list representation of a stack (or queue)
- * @n: integer
- * @prev: points to the previous element of the stack (or queue)
- * @next: points to the next element of the stack (or queue)
- *
- * Description: doubly linked list node structure
- * for stack, queues, LIFO, FIFO
- */
-typedef struct stack_s
-{
-        int n;
-        struct stack_s *prev;
-        struct stack_s *next;
-} stack_t;
+<img src="https://i.ibb.co/zQwXK4q/imagen-3.jpg" alt="imagen-3" border="0">
 
-/**
- * struct instruction_s - opcode and its function
- * @opcode: the opcode
- * @f: function to handle the opcode
- *
- * Description: opcode and its function
- * for stack, queues, LIFO, FIFO
- */
-typedef struct instruction_s
-{
-        char *opcode;
-        void (*f)(stack_t **stack, unsigned int line_number);
-} instruction_t;
+<img src="https://i.ibb.co/K0kHBHt/imagen-4.jpg" alt="imagen-4" border="0">
 
 ## Compilation & Output
 
 - Your code will be compiled this way:
 
-gcc -Wall -Werror -Wextra -pedantic -std=c90 *.c -o monty
+<img src="https://i.ibb.co/3pyyXPT/imagen-5.jpg" alt="imagen-5" border="0">
 
 - Any output must be printed on stdout
 - Any error message must be printed on stderr
@@ -95,11 +69,11 @@ Monty 0.98 is a scripting language that is first compiled into Monty byte codes 
 
 Files containing Monty byte codes usually have the .m extension. Most of the industry uses this standard but it is not required by the specification of the language. There is not more than one instruction per line. There can be any number of spaces before or after the opcode and its argument:
 
-(<img src="https://i.ibb.co/ZSqX7g5/imagen-1.jpg" alt="imagen-1" border="0">)
+<img src="https://i.ibb.co/ZSqX7g5/imagen-1.jpg" alt="imagen-1" border="0">
 
 Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
 
-(<img src="https://i.ibb.co/0B7TBZ4/imagen-2.jpg" alt="imagen-2" border="0">)
+<img src="https://i.ibb.co/0B7TBZ4/imagen-2.jpg" alt="imagen-2" border="0">
 
 
 
