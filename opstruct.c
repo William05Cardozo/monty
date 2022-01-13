@@ -3,7 +3,7 @@
 
 void delegate_op(stack_t **stack, char *op, unsigned int line_number)
 {
-	int i;
+	int i = 0;
 
 	instruction_t all_ops = {
 		{"push", ins_push},

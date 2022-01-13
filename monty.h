@@ -8,6 +8,11 @@
 #include <sys/stat.h>
 #include <unistd.h>
 
+#define UNUSED(x) (void)(x)
+#define TRUE 1
+#define FALSE 0
+#define DELIMS "\n \t\r"
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
