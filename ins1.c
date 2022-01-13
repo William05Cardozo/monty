@@ -96,7 +96,7 @@ void ins_pop(stack_t **stack, unsigned int line_number)
  * @line_number: value of new node
  * **/
 
-void instruction_swap(stack_t **stack, unsigned int line_number)
+void ins_swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp;
 
