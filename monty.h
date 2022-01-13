@@ -40,13 +40,13 @@ int process_file(char *filename, stack_t **stack);
 
 void delegate_op(stack_t **stack, char *op, unsigned int line_number);
 
-void instruction_push(stack_t **stack, unsigned int line_number);
-void instruction_pop(stack_t **stack, unsigned int line_number);
-void instruction_pint(stack_t **stack, unsigned int line_number);
-void instruction_pall(stack_t **stack, unsigned int line_number);
-void instruction_swap(stack_t **stack, unsigned int line_number);
+void ins_push(stack_t **stack, unsigned int line_number);
+void ins_pop(stack_t **stack, unsigned int line_number);
+void ins_pint(stack_t **stack, unsigned int line_number);
+void ins_pall(stack_t **stack, unsigned int line_number);
+void ins_swap(stack_t **stack, unsigned int line_number);
 
-void instruction_add(stack_t **stack, unsigned int line_number);
-void instruction_nop(stack_t **stack, unsigned int line_number);
+void ins_add(stack_t **stack, unsigned int line_number);
+void ins_nop(stack_t **stack, unsigned int line_number);
 
 #endif
