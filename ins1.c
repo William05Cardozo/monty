@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * ins_push - pushes an element to the stack
+ * @stack: double pointer to the first node
+ * @line_number: value of new node
+ * Return: nothing
+ * **/
+
 void ins_push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *element = malloc(sizeof(stack_t));
@@ -24,4 +31,23 @@ void ins_push(stack_t **stack, unsigned int line_number)
 	if (element->next != NULL)
 		(element->next)->prev = element;
 	*stack = element;
+}
+
+/**
+ * ins_pall - prints all values on the stack, starting from top
+ * @stack: double pointer to the first node
+ * @line_number: value of new node
+ * Return: nothing
+ * **/
+
+void ins_pall(stack_t **stack, unsigned int line_number)
+{
+	stack_t *element = *stack;
+
+	UNUSED(line_number);
+	while (element != NULL)
+	{
+		printf("%d\n", element->n);
+		printf("%d\n", element->n);
+	}
 }

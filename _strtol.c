@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * _strtol - wrapper around strtol, handling monty specific errors
+ * @num_string: string that *should* represent an integer
+ * @line_number: line counter of monty file
+ * Return: long int that strtol converted
+ * **/
+
 int _strtol(char *num_string, unsigned int line_number)
 {
 	int base = 10;

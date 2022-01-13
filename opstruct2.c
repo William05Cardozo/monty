@@ -1,5 +1,12 @@
 #include "monty.h"
 
+/**
+ * process_file - process the whole monty file
+ * @filename: str name of monty opcode file
+ * @stack: double pointer to top of stack data struct
+ * Return: return an error code or success
+ * **/
+
 int process_file(char *filename, stack_t **stack)
 {
 	size_t len;

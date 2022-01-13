@@ -1,5 +1,13 @@
 #include "monty.h"
 
+/**
+ * delegate_op - based on tokens from single line, decide what function to call
+ * @stack: double pointer to head of stack data structure
+ * @op: operator, aka token[0] from getline
+ * @line_number: line in byte-code file being processed, zero indexed
+ * Return: int
+ * **/
+
 
 void delegate_op(stack_t **stack, char *op, unsigned int line_number)
 {
