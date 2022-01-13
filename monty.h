@@ -64,5 +64,6 @@ void ins_pall(stack_t **stack, unsigned int line_number);
 void ins_swap(stack_t **stack, unsigned int line_number);
 void ins_add(stack_t **stack, unsigned int line_number);
 void ins_nop(stack_t **stack, unsigned int line_number);
+int is_leading_digit(char ascii_char);                                                                            int _strtol(char *num_string, unsigned int line_number);
 
 #endif

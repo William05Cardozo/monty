@@ -5,14 +5,14 @@ void delegate_op(stack_t **stack, char *op, unsigned int line_number)
 {
 	int i = 0;
 
-	instruction_t all_ops = {
+	instruction_t all_ops[] = {
 		{"push", ins_push},
 		{"pall", ins_pall},
 		{"pint", ins_pint},
 		{"pop", ins_pop},
 		{"swap", ins_swap},
 		{"add", ins_add},
-		{"nop", ins_nop}
+		{"nop", ins_nop},
 		{NULL, NULL}
 	};
 
