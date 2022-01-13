@@ -17,8 +17,7 @@ int _strtol(char *num_string, unsigned int line_number)
 
 	if (endptr == num_string)
 			{
-						/*  No digits were found */
-			   		printf("L%d: usage: push integer\n", line_number);
+				printf("L%d: usage: push integer\n", line_number);
 						exit(EXIT_FAILURE);
 						}
 	if (num_string[0] != '\0')
