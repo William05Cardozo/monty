@@ -6,7 +6,7 @@
  * @op: operator, aka token[0] from getline
  * @line_number: line in byte-code file being processed, zero indexed
  * Return: int
- * **/
+ **/
 
 
 void delegate_op(stack_t **stack, char *op, unsigned int line_number)
@@ -16,13 +16,11 @@ void delegate_op(stack_t **stack, char *op, unsigned int line_number)
 	instruction_t all_ops[] = {
 		{"push", ins_push},
 		{"pall", ins_pall},
-		/*
 		{"pint", ins_pint},
-		{"pop", ins_pop},
-		{"swap", ins_swap},
-		{"add", ins_add},
-		{"nop", ins_nop},
-		*/
+	/*	{"pop", ins_pop},*/
+	/* 	{"swap", ins_swap},*/
+	/* 	{"add", ins_add},*/
+	/*	{"nop", ins_nop},*/
 		{NULL, NULL}
 	};
 

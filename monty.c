@@ -5,7 +5,7 @@ glob_t glob;
 /**
  * stack_init - initialize all the things
  * @head: top of stack data structure
- * **/
+ **/
 
 void stack_init(stack_t **head)
 {
@@ -14,10 +14,10 @@ void stack_init(stack_t **head)
 }
 
 /**
- * free_all - free all malloc'ed memory
+ * free_all - free all malloc and memory
  * note: this is available "atexit", starting at
  * getline loop
- * **/
+ **/
 
 void free_all(void)
 {
@@ -37,7 +37,7 @@ void free_all(void)
  * @argc: number of command line arguments
  * @argv: array of strings containing the comm line args
  * Return: EXIT_SUCCESS or EXIT_FAILURE
- * **/
+ **/
 
 int main(int argc, char **argv)
 {
