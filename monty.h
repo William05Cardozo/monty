@@ -24,7 +24,7 @@
  * @next: points to the next element of the stack (or queue)
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO
- * **/
+ **/
 typedef struct stack_s
 {
 	int n;
@@ -38,7 +38,7 @@ typedef struct stack_s
  * @f: function to handle the opcode
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO
- * **/
+ **/
 typedef struct instruction_s
 {
 	char *opcode;
@@ -49,7 +49,7 @@ typedef struct instruction_s
  * struct glob_s - globally useful variables, all rolled into one
  * @top: double pointer to top of stack
  * @ops: double pointer to an instruction struct
- * **/
+ **/
 
 typedef struct glob_s
 {

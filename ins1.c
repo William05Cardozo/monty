@@ -5,7 +5,7 @@
  * @stack: double pointer to the first node
  * @line_number: value of new node
  * Return: nothing
- * **/
+ **/
 
 void ins_push(stack_t **stack, unsigned int line_number)
 {
@@ -38,7 +38,7 @@ void ins_push(stack_t **stack, unsigned int line_number)
  * @stack: double pointer to the first node
  * @line_number: value of new node
  * Return: nothing
- * **/
+ **/
 
 void ins_pall(stack_t **stack, unsigned int line_number)
 {
@@ -67,4 +67,25 @@ void ins_pint(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", (*stack)->n);
+}
+
+/**
+ * ins_pop - Function remove elements of stack
+ * @stack: Double Pointer
+ * @line_number: Value of new node
+ * Return: No Line
+ **/
+
+void ins_pop(stack_t **stack, unsigned int line_number)
+{
+	stack_t *node;
+
+	if (stack == NULL || *stack == NULL)
+	{
+		printf("L%u: can't pop an empty stack\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	node = *stack;
+	(*stack) = (*stack)->next;
+	free(node);
 }
