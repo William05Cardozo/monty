@@ -9,7 +9,22 @@
 
 void ins_mod(stack_t **stack, unsigned int line_number)
 {
+	int tmp;
 
+	if (*stack == NULL || (*stack)->next == NULL)
+	{
+		printf("L%u: can't mod, stack too short\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+
+	tmp = (*stack)->n;
+	if (tmp == 0)
+	{
+		printf("L%u: division by zero\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	ins_pop(stack, line_number);
+	(*stack)->n %= tmp;
 }
 
 /**
@@ -47,4 +62,20 @@ void ins_pchar(stack_t **stack, unsigned int line_number)
 void ins_pstr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *tmp = *stack;
+
+	UNUSED(line_number);
+	if (*stack == NULL)
+	{
+		printf("\n");
+		return;
+	}
+	while (tmp != NULL)
+	{
+		if (isascii(tmp->n) && tmp->n != 0)
+			putchar(tmp->n);
+		else
+			break;
+		tmp = tmp->next;
+	}
+	putchar('\n');
 }
