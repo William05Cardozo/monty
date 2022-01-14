@@ -1,6 +1,2 @@
-*.swp
-*.swo
-monty
-a.out
-*.gch
-BACKUP/
+bytecodes/
+.gitignore

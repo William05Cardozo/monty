@@ -1,6 +1,9 @@
+pall
 push 1
-pint
+pall
 push 2
-pint
+pall
 push 3
-pint
+pall
+push  ndnd4bfbbhfhfhhhhrhehhea
+pall hello! 🙂 we don't really care about what's after pall
