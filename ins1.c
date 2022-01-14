@@ -25,7 +25,7 @@ void ins_push(stack_t **stack, unsigned int line_number)
 		printf("L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
 	}
-	if (isdigit(num))
+	while (isdigit(num))
 	{
 		printf("L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
