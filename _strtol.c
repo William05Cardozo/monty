@@ -22,7 +22,7 @@ int _strtol(char *num_string, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 
-	if (endptr == num_string)
+	if (endptr != num_string)
 	{
 		printf("L%d: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
