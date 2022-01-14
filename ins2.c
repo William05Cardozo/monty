@@ -82,7 +82,12 @@ void ins_div(stack_t **stack, unsigned int line_number)
 	(*stack)->n /= tmp;
 }
 
-
+/**
+ * ins_mul - Function multiplicate second and top nodes
+ * @stack: Double Pointer
+ * @line_number: Value of node
+ * Return: No Line
+ **/
 
 void ins_mul(stack_t **stack, unsigned int line_number)
 {
