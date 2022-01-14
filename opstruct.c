@@ -24,6 +24,9 @@ void delegate_op(stack_t **stack, char *op, unsigned int line_number)
 		{"sub", ins_sub},
 		{"div", ins_div},
 		{"mul", ins_mul},
+		{"mod", ins_mod},
+		{"pchar", ins_pchar},
+		{"pstr", ins_pstr},
 		{NULL, NULL}
 	};
 

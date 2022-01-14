@@ -73,6 +73,9 @@ void ins_nop(stack_t **stack, unsigned int line_number);
 void ins_sub(stack_t **stack, unsigned int line_number);
 void ins_div(stack_t **stack, unsigned int line_number);
 void ins_mul(stack_t **stack, unsigned int line_number);
+void ins_pchar(stack_t **stack, unsigned int line_number);
+void ins_pstr(stack_t **stack, unsigned int line_number);
+void ins__mod(stack_t **stack, unsigned int line_number);
 int is_leading_digit(char ascii_char);
 int _strtol(char *num_string, unsigned int line_number);
 
