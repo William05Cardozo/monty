@@ -12,8 +12,7 @@ void ins_push(stack_t **stack, unsigned int line_number)
 	stack_t *element = malloc(sizeof(stack_t));
 	char *op;
 	int num;
-	/*char letra;*/
-
+	
 	if (element == NULL)
 	{
 		printf("Error: malloc failed\n");
@@ -21,11 +20,6 @@ void ins_push(stack_t **stack, unsigned int line_number)
 	}
 	op = strtok(NULL, DELIMS);
 	if (op == NULL || stack == NULL)
-	{
-		printf("L%u: usage: push integer\n", line_number);
-		exit(EXIT_FAILURE);
-	}
-	while (isdigit(num))
 	{
 		printf("L%u: usage: push integer\n", line_number);
 		exit(EXIT_FAILURE);
